@@ -12,15 +12,14 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 100%;
-  height: 293px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 92px 50px 96px;
 }
 
 .header__menu {
   font-weight: 400;
   font-size: 18px;
 }
+
 .header__links-list {
   display: flex;
   gap: 29px;
@@ -50,6 +49,7 @@
   flex-direction: column;
   align-items: flex-start;
   font-weight: 400;
+  font-style: normal;
   font-size: 18px;
   line-height: 25px;
 }
@@ -82,12 +82,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1000;
-  height: 385;
-  letter-spacing: 90px;
+  width: 100%;
 }
 
 .aligned-text {
+  display: block;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -96,16 +95,16 @@
   text-transform: uppercase;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
 .aligned-text_center {
   text-align: center;
 }
 
 .aligned-text_right {
   text-align: end;
-}
-
-.no-letter-spacing {
-  margin-right: -30px;
 }
 
 .cover__description {
@@ -121,18 +120,18 @@
   max-width: 637px;
   color: #fff;
   font-weight: 400;
+  font-style: normal;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 90%;
   text-transform: uppercase;
   word-spacing: 18px;
 }
 
 .bet-button {
   width: 255px;
-  height: 50px;
+  padding-top: 12px;
+  padding-bottom: 11px;
   border: 1px solid #fff;
-  padding: 0;
   color: #fff;
   font-weight: 500;
   font-size: 22px;
@@ -146,6 +145,7 @@
   width: 1052px;
   margin: 180px auto 0;
 }
+
 .lots__heading {
   margin-bottom: 27px;
   margin-left: 40px;
@@ -171,7 +171,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   padding: 48px 40px;
   background: cover no-repeat center;
 }
@@ -219,7 +219,6 @@
   grid-template-columns: 334px 1fr;
   gap: 25px;
   width: 1052px;
-  max-height: 595px;
   margin: 118px auto 180px;
 }
 
